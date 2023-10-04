@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+<body>
+    <script src="./index.js"></script>
+    <script>
+    const helloWorld = require("./index.js");
+
+    const msg = await helloWorld();
+
+    // Tampilkan output ke console di tab HTML
+    const console = document.querySelector(".console");
+    console.textContent = msg;
+    </script>
+</body>
+</html>
